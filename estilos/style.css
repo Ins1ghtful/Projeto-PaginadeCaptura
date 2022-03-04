@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor0: white;
+    --cor1: black;
+    --cor2: rgb(29, 29, 29);
+    --cor3: rgb(51, 163, 255);
+    --font0: font-family:'Segoe';
+    --font1: ;
+    --font2: ;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--cor1);
+}
+
+header{
+    background-color: var(--cor3);
+    color: var(--cor0);
+
+}
+main{
+    background-color: var(--cor2);
+}
+
+#container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 90%;
+    border: 1px solid red;
+}
