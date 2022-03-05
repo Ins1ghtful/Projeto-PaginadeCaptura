@@ -1,39 +1,125 @@
+/*-----------------------------------------CONFIGS GLOBAIS------------------------------------------------*/
+
 @charset "UTF-8";
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
 :root{
     --cor0: white;
-    --cor1: black;
-    --cor2: rgb(29, 29, 29);
-    --cor3: rgb(51, 163, 255);
-    --font0: font-family:'Segoe';
-    --font1: ;
-    --font2: ;
-}
-
-body{
-    height: 100vh;
-    background-color: var(--cor1);
-}
-
-header{
-    background-color: var(--cor3);
-    color: var(--cor0);
-
-}
-main{
-    background-color: var(--cor2);
+    --cor1: rgba(255, 255, 255, 0.747);
+    --cor2: black;
+    --cor3: rgb(29, 29, 29);
+    --cor4: #48C5CE;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
 #container{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 90%;
-    border: 1px solid red;
+    margin: auto;
+    max-width: 900px;
+}
+
+body{
+    background-color: var(--cor2);
+    font-family: var(--fonte-padrao);
+}
+
+.pb{
+    padding-bottom: 15px;
+}
+.pb-gb{
+    padding-bottom: 10px;
+}
+
+
+/*-----------------------------------------CABEÇALHO------------------------------------------------*/
+
+    
+header{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
+    padding: 3px;
+    text-align: center;
+}
+
+/*-----------------------------------------MAIN------------------------------------------------------*/
+
+main{
+    background-image: url('../images/people.jpg');
+    background-size: cover;
+    padding: 5px 10px 5px 0;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+#gray-box{
+    padding: 10px;
+    background-color: var(--cor1);
+    float: right;
+    max-width: 230px;
+}
+
+#gray-box h2{
+    font-size: 0.9em;
+}
+
+input, select{
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+input[type="submit"]{
+    color: var(--cor0);
+    background-color: var(--cor4);
+    font-weight: bold;
+    padding: 7px;
+}
+
+
+/*--------------------------------------------RODAPÉ------------------------------------------------*/
+
+footer{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    text-align: center;
+}
+
+#caixa-biografia{
+    margin: auto;
+}
+
+#texto-biografia{
+    display: inline-block;
+    padding-top: 20px;
+    max-width: 40%;
+    text-align: left;
+    margin-left: 25px;
+}
+
+footer img{
+    max-width: 110px;
+}
+
+/*--------------------------------------------RESPONSIVIDADE------------------------------------------------*/
+
+@media screen and(max-width:600px){
+    header{
+        background-color: red;
+    }
 }
