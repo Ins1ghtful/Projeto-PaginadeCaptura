@@ -65,6 +65,7 @@ main{
 
 #gray-box h2{
     font-size: 0.9em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.116);
 }
 
 input, select{
@@ -98,6 +99,7 @@ footer{
     background-color: var(--cor3);
     color: var(--cor0);
     text-align: center;
+    padding-bottom: 5px;
 }
 
 #caixa-biografia{
@@ -116,10 +118,94 @@ footer img{
     max-width: 110px;
 }
 
+
 /*--------------------------------------------RESPONSIVIDADE------------------------------------------------*/
 
-@media screen and(max-width:600px){
+
+@media screen and (max-width: 844px){
+    /*-----RODAPÉ------*/
+    footer img{
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 820px){
+    /*-----RODAPÉ------*/
+    footer img{
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 655px){
+    /*-----RODAPÉ------*/
+    footer img{
+        max-width: 140px;
+    }
+}
+
+@media screen and (max-width: 641px){
+    /*-----RODAPÉ------*/
+    footer img{
+        max-width: 155px;
+    }
+}
+
+@media screen and (max-width: 600px){ 
+    /*---CABEÇALHO----*/
     header{
-        background-color: red;
+        background-color: var(--cor4);
+        color: var(--cor0);
+        font-family: var(--font-padrao);
+        font-size: 0.6em;
+        padding: 7px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    /*------CORPO-----*/
+
+    main{
+        padding: 10px;
+    }
+    #gray-box{
+    padding: 15px;
+    background-color: var(--cor1);
+    max-width: 100%;
+
+    }
+    #gray-box h2{
+        font-size: 0.9em;
+        text-align: center;
+        padding-bottom: 20px;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.089);  
+    }
+
+    input,select{
+        padding: 5px;
+        margin-bottom: 7px;
+    }
+
+    input[type="submit"]{
+        padding: 10px;
+    }
+
+    /*RODAPÉ*/
+    footer{
+        padding: 12px 10px 0px 10px;
+    }
+    footer img{
+        transform: translateX(12%);
+        max-width: 100px;
+        padding-top: 4px;
+    }
+    footer h3{
+        padding-top: 10px;
+        text-align: center;
+        
+    }
+
+    #texto-biografia{
+    display: inline;
+    max-width: 100%;
+    text-align: justify;
     }
 }
